@@ -13,6 +13,11 @@
 		6174596B1EE1021F00F79288 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 617459691EE1021F00F79288 /* LaunchScreen.storyboard */; };
 		617459761EE1022000F79288 /* DKSQRCodeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 617459751EE1022000F79288 /* DKSQRCodeTests.m */; };
 		617459811EE1022000F79288 /* DKSQRCodeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 617459801EE1022000F79288 /* DKSQRCodeUITests.m */; };
+		617459911EE1023400F79288 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6174598F1EE1023400F79288 /* RootViewController.m */; };
+		617459921EE1023400F79288 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 617459901EE1023400F79288 /* RootViewController.xib */; };
+		617459951EE1032E00F79288 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 617459941EE1032E00F79288 /* AVFoundation.framework */; };
+		617459981EE107A900F79288 /* ScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 617459971EE107A900F79288 /* ScanViewController.m */; };
+		6174599B1EE1123F00F79288 /* HeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6174599A1EE1123F00F79288 /* HeadViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +51,14 @@
 		6174597C1EE1022000F79288 /* DKSQRCodeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DKSQRCodeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		617459801EE1022000F79288 /* DKSQRCodeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DKSQRCodeUITests.m; sourceTree = "<group>"; };
 		617459821EE1022000F79288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6174598E1EE1023400F79288 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		6174598F1EE1023400F79288 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		617459901EE1023400F79288 /* RootViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RootViewController.xib; sourceTree = "<group>"; };
+		617459941EE1032E00F79288 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		617459961EE107A900F79288 /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
+		617459971EE107A900F79288 /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
+		617459991EE1123F00F79288 /* HeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeadViewController.h; sourceTree = "<group>"; };
+		6174599A1EE1123F00F79288 /* HeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeadViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				617459951EE1032E00F79288 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +94,7 @@
 				617459741EE1022000F79288 /* DKSQRCodeTests */,
 				6174597F1EE1022000F79288 /* DKSQRCodeUITests */,
 				6174595F1EE1021F00F79288 /* Products */,
+				617459931EE1032D00F79288 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,6 +113,13 @@
 			children = (
 				617459641EE1021F00F79288 /* AppDelegate.h */,
 				617459651EE1021F00F79288 /* AppDelegate.m */,
+				6174598E1EE1023400F79288 /* RootViewController.h */,
+				6174598F1EE1023400F79288 /* RootViewController.m */,
+				617459901EE1023400F79288 /* RootViewController.xib */,
+				617459961EE107A900F79288 /* ScanViewController.h */,
+				617459971EE107A900F79288 /* ScanViewController.m */,
+				617459991EE1123F00F79288 /* HeadViewController.h */,
+				6174599A1EE1123F00F79288 /* HeadViewController.m */,
 				617459671EE1021F00F79288 /* Assets.xcassets */,
 				617459691EE1021F00F79288 /* LaunchScreen.storyboard */,
 				6174596C1EE1021F00F79288 /* Info.plist */,
@@ -130,6 +152,14 @@
 				617459821EE1022000F79288 /* Info.plist */,
 			);
 			path = DKSQRCodeUITests;
+			sourceTree = "<group>";
+		};
+		617459931EE1032D00F79288 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				617459941EE1032E00F79288 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +273,7 @@
 			files = (
 				617459681EE1021F00F79288 /* Assets.xcassets in Resources */,
 				6174596B1EE1021F00F79288 /* LaunchScreen.storyboard in Resources */,
+				617459921EE1023400F79288 /* RootViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +299,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				617459661EE1021F00F79288 /* AppDelegate.m in Sources */,
+				6174599B1EE1123F00F79288 /* HeadViewController.m in Sources */,
 				617459631EE1021F00F79288 /* main.m in Sources */,
+				617459911EE1023400F79288 /* RootViewController.m in Sources */,
+				617459981EE107A900F79288 /* ScanViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +445,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X42645MK9G;
 				INFOPLIST_FILE = DKSQRCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robooot.DKSQRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -423,6 +458,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = X42645MK9G;
 				INFOPLIST_FILE = DKSQRCode/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.robooot.DKSQRCode;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RootViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iwg-nS-KdE">
+                    <rect key="frame" x="106" y="104" width="108" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.95344342900276813" blue="0.70976391030235231" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="YmK-BS-1xW"/>
+                    </constraints>
+                    <state key="normal" title="二维码扫描"/>
+                    <connections>
+                        <action selector="scanCode:" destination="-1" eventType="touchUpInside" id="dlG-Fy-tvs"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wWv-DU-tRh">
+                    <rect key="frame" x="106" y="186" width="108" height="30"/>
+                    <color key="backgroundColor" red="1" green="0.95344342900000001" blue="0.70976391029999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="U7P-3M-evJ"/>
+                    </constraints>
+                    <state key="normal" title="二维码识别"/>
+                    <connections>
+                        <action selector="headCode:" destination="-1" eventType="touchUpInside" id="VRh-tk-pew"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="wWv-DU-tRh" secondAttribute="trailing" constant="106" id="ITC-N7-Zly"/>
+                <constraint firstItem="wWv-DU-tRh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="106" id="Oxv-Wt-hMS"/>
+                <constraint firstItem="iwg-nS-KdE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="106" id="TZS-Re-BdL"/>
+                <constraint firstAttribute="trailing" secondItem="iwg-nS-KdE" secondAttribute="trailing" constant="106" id="lu8-6t-PTx"/>
+                <constraint firstItem="wWv-DU-tRh" firstAttribute="top" secondItem="iwg-nS-KdE" secondAttribute="bottom" constant="52" id="tBN-xV-mep"/>
+                <constraint firstItem="iwg-nS-KdE" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="104" id="zvN-VT-bzU"/>
+            </constraints>
+            <point key="canvasLocation" x="-375" y="-398"/>
+        </view>
+    </objects>
+</document>
